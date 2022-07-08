@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+        <h1>Bookshelf App</h1>
+    </header>
+    
+    <main>
+        <section class="input-section">
+            <div>
+                <h2>Masukan Buku Baru</h2>
+                <form id="input-buku">
+                    <div class="input judul">
+                        <label for="inputJudulBuku">Judul</label>
+                        <input id="inputJudulBuku" type="text" placeholder="Dicoding" required>
+                    </div>
+                    <div class="flex-row">
+                        <div class="input penulis">
+                            <label for="inputPenulisBuku">Penulis</label>
+                            <input id="inputPenulisBuku" type="text" placeholder="Rizky Rama Dhanu" required>
+                        </div>
+                        <div class="input tahun">
+                            <label for="inputTahunBuku">Tahun</label>
+                            <input id="inputTahunBuku" type="number" placeholder="2022" required>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="input-checkbox">
+                            <label for="dibaca">Selesai dibaca</label>
+                            <input id="dibaca" type="checkbox">
+                        </div>
+                        <div class="button">
+                            <button id="input-submit" type="submit">Tambah</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="cari-buku">
+                    <h3>Cari Buku</h3>
+                    <form id="cari-buku">
+                        <input id="inputCariBuku" type="text" placeholder="Judul Buku">
+                        <button id="cari" type="button">Cari</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="book-shelf">
+            <h2>Belum Selesai Dibaca</h2>
+           <div class="book-list" id="belumDibaca"> 
+                <!--
+                daftar buku
+                -->
+            </div>
+        </section>
+        <section class="book-shelf">
+            <h2>Selesai Dibaca</h2>
+            <div class="book-list" id="telahDibaca">
+                <!--
+                daftar buku
+                -->
+            </div>
+        </section>
+        <section class="edit-section" hidden>
+            <div class="edit-form">
+                <button id="closeForm">X</button>
+                <form id="edit-buku">
+                    <h3>Edit Buku</h3>
+                    <div class="input judul">
+                        <label for="editJudulBuku">Judul</label>
+                        <input id="editJudulBuku" type="text" required>
+                    </div>
+                    <div class="flex-row">
+                        <div class="input penulis">
+                            <label for="editPenulisBuku">Penulis</label>
+                            <input id="editPenulisBuku" type="text" required>
+                        </div>
+                        <div class="input tahun">
+                            <label for="editTahunBuku">Tahun</label>
+                            <input id="editTahunBuku" type="number" required>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="input-checkbox">
+                            <label for="editBaca">Selesai dibaca</label>
+                            <input id="editBaca" type="checkbox">
+                        </div>
+                        <div class="button">
+                            <button id="edit-submit" type="button">Edit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Copyright &copy; 2022<br><span>Designed by Rizky Rama Dhanu</span></p>
+    </footer>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
