@@ -270,7 +270,7 @@ button {
 
 .edit-form {
     position: absolute; 
-    top: 40%;
+    top: 20%;
     left: 50%; 
     transform: translate(-50%, -50%);
     justify-content: center;
@@ -285,7 +285,7 @@ button {
     font-size: 30px;
     z-index: 10;
     top: -10px;
-    right: 150px;
+    right: 35px;
     border-radius: 50%;
 }
 
@@ -327,7 +327,6 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 10px;
-    display: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -372,6 +371,14 @@ footer span {
    left: 50%; 
    transform: translate(-50%, -50%);
  }
+    
+   #closeForm {
+    width: 45px;
+    padding: 10px;
+    font-size: 20px;
+    top: -10px;
+    right: 170px;
+}
 
   #edit-buku {
    max-width: 700px;
@@ -380,10 +387,6 @@ footer span {
 
   #edit-buku .flex-row {
    flex-direction: column;
- }
-
-  footer {
-   display: block;
  }
 }
 
